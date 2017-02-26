@@ -30,3 +30,31 @@ body {
 
 
 .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+
+#first{
+  background-color: #ecf0f1;
+}
+
+#second{
+  background-color: #9b59b6;
+}
+
+#third{
+  background-color: #2ecc71;
+}
+
+#fourth{
+  background-color: #1abc9c;
+}
+
+#fith{
+  background-color: #ecf0f1;
+}
+
+#gradient{
+  width: 100%;
+  height: 800px;
+  padding: 0px;
+  margin: 0px;
+}
+
