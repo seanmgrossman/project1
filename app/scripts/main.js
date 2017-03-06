@@ -16,6 +16,7 @@
 
   // initialize fullPage
   $('#fullpage').fullpage({
+    slidesNavigation: true,
 
     navigation: true,
     onLeave: function(index, nextIndex, direction) {
@@ -74,11 +75,11 @@
         $isAnimatedFourth.addClass('animated zoomIn').css('animation-delay', '.6s');
         $isAnimatedFourthSingle.addClass('animated lightSpeedIn').css('animation-delay', '1.2s');
         $isAnimatedFourthSingle.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-          $(this).removeClass('lightSpeedIn').addClass('zoomOutDown');
+        
         });
       }
       else if( ( index == 1 || index == 2 || index == 3 || index == 4 ) && nextIndex == 5 ) {
-        $isAnimatedFith.eq(0).addClass('animated rotateInDownRight').css('animation-delay', '.3s'); 
+        $isAnimatedFith.eq(0).addClass('animated fadeIn').css('animation-delay', '.3s'); 
         $isAnimatedFith.eq(1).addClass('animated fadeInLeftBig').css('animation-delay', '.6s');
         $isAnimatedFith.addClass('animated bounceInDown').css('animation-delay', '1.2s');
       }
@@ -92,7 +93,7 @@
 
 
 //Change the liquid settings
-    d3.select('#fillgauge2').call(d3.liquidfillgauge, 28, {
+    d3.select('#fillgauge2').call(d3.liquidfillgauge, 78, {
       circleColor: '#0f8bca',
       textColor: '#ffffff',
       waveTextColor: '#174f80',
@@ -109,8 +110,8 @@
       gradientToColor: '#ffffff'
 
     });
-    d3.select('#fillgauge3').call(d3.liquidfillgauge, 40, {
-      circleColor: '#0f8bca',
+    d3.select('#fillgauge3').call(d3.liquidfillgauge, 75, {
+      circleColor: '#2ecc71',
       textColor: '#ffffff',
       waveTextColor: '#174f80',
       waveColor: '#0f8bca',
@@ -125,9 +126,10 @@
       gradientFromColor: '#0f8bca',
       gradientToColor: '#ffffff'
     });
-    d3.select('#fillgauge4').call(d3.liquidfillgauge, 50, {
+    d3.select('#fillgauge4').call(d3.liquidfillgauge, 54, {
       circleThickness: 0.1,
       circleFillGap: 0.2,
+      circleColor: '#e67e22',
       textColor: '#ffffff',
       waveTextColor: '#174f80',      
       textVertPosition: 0.52,
@@ -141,10 +143,10 @@
       gradientFromColor: '#0f8bca',
       gradientToColor: '#ffffff'
     });
-    d3.select('#fillgauge5').call(d3.liquidfillgauge, 60, {
+    d3.select('#fillgauge5').call(d3.liquidfillgauge, 43, {
       circleThickness: 0.1,
       circleFillGap: 0.2,
-      circleColor: '#0f8bca',
+      circleColor: '#f1c40f',
       textColor: '#ffffff',
       waveTextColor: '#174f80',
       waveColor: '#0f8bca',
@@ -160,8 +162,8 @@
       gradientFromColor: '#0f8bca',
       gradientToColor: '#ffffff'      
     });
-    d3.select('#fillgauge6').call(d3.liquidfillgauge, 90, {
-      circleColor: '#0f8bca',
+    d3.select('#fillgauge6').call(d3.liquidfillgauge, 62, {
+      circleColor: '#89C4F4',
       textColor: '#ffffff',
       waveTextColor: '#174f80',
       waveColor: '#0f8bca',
@@ -177,7 +179,22 @@
       gradientToColor: '#ffffff'
     });
 
-
+    d3.select('#fillgauge7').call(d3.liquidfillgauge, 90, {
+      circleColor: '#e74c3c',
+      textColor: '#ffffff',
+      waveTextColor: '#174f80',
+      waveColor: '#0f8bca',
+      circleThickness: 0.1,
+      circleFillGap: 0.2,
+      textVertPosition: 0.52,
+      waveAnimateTime: 2000,
+      waveHeight: 0.1,
+      waveCount: 3,
+      fillWithGradient: true,
+      gradientPoints: [0.2, 0, 0.9, 1],
+      gradientFromColor: '#0f8bca',
+      gradientToColor: '#ffffff'
+    });
 
 //color changer 
 var colors = new Array(

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: codel;
+    src: url(../fonts/CODE_Light.otf);
+}
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -48,7 +53,7 @@ body {
 }
 
 #fith{
-  background-color: #ecf0f1;
+  background-color: #95a5a6;
 }
 
 #gradient{
@@ -58,3 +63,76 @@ body {
   margin: 0px;
 }
 
+.bold{
+  font-weight: bold;
+}
+
+.skills{
+
+}
+
+#html{
+  background-color:#0f8bca;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 25px;
+
+
+}
+
+#css{
+  background-color:#2ecc71;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 25px;
+}
+
+#php{
+  background-color: #f1c40f;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 25px;
+}
+
+#js{
+  background-color:#e67e22;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  border-radius: 25px;
+}
+
+#jq{
+  background-color:#89C4F4;
+  padding-right: 5px;
+  padding-left: 8px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 25px;
+}
+
+#pizza{
+  background-color:#e74c3c;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 25px;
+}
+
+h5 {
+  display: inline;
+ margin: 0 auto;
+ padding-left: -20px 
+}
+
+ul {
+  list-style-type:circle;
+}
+
+img {
+}
+
+#name {
+
+font-family: codel,"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
